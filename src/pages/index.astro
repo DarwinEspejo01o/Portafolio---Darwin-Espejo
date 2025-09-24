@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import Proyectos from '../components/Proyectos.astro';
+import Contacto from '../components/Contacto.astro';
+
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Portafolio De Darwin Espejo - Desarrollador y diseñador de sitios web intuitivos.">
+    <main>
+        <section class="flex flex-col gap-5 w-[45vw] mx-auto lg:w-[45vw] py-15 ">
+            <div class="flex justify-center items-center gap-15">
+                <img src="../../public/Perfil_portafolio.png" alt="" class="w-[21vw] w-[21vh]">
+
+                <div class="flex flex-col h-[100px] gap-5">
+                    <h1 class="font-[Preahvihear] text-[2.5vw] text-white">Hola, Soy <Badge>Darwin Espejo</Badge> </h1>
+
+                    <div class="flex gap-4">
+                        <a href="#" class="py-2 w-[10vw] text-center text-[1vw] text-white rounded-md bg-[#6523C5] hover:scale-105 transition duration-300 ease-in-out will-change-transform">Descargar CV</a>
+                        <a href="#" class="py-2 w-[10vw] text-center text-[1vw] text-[#3B3B3B] rounded-md bg-white hover:scale-105 transition duration-300 ease-in-out will-change-transform">Ver mis trabajos</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-white font-[Preahvihear] text-[2.1vw] w-120">Desarrollador y Diseñador de sitios web <Badge>intuitivos.</Badge></h2>
+        </section>
+
+
+        <section class="flex flex-col gap-5 w-[65%] mx-auto items-center pt-30" id="sobre_mi">
+            <h1 class="font-[Preahvihear] text-[2.3vw] text-white text-center">Conoce más sobre mí</h1>
+            <p class="font-[Preahvihear] text-white text-center text-[1.2vw]">Me desempeño como Desarrollador fullstack con un año de experiencia, apasionado por crear soluciones digitales que combinan estética, funcionalidad y eficiencia. He trabajado en un proyecto donde tanto el diseño centrado en el usuario como el mantenimiento del lado del servidor han sido fundamentales para el éxito del producto.</p>
+
+            <div class="font-[Plus_Jakarta_Sans] flex flex-wrap justify-center gap-5 mt-[8vh] w-[100%] lg:w-[75rem]">
+
+                <div class="flex flex-col gap-3 text-white bg-linear-to-l from-[#6523C5] to-[#30115F] w-[25vw] rounded-md px-[1rem] py-[.8rem] ">
+                    <h2 class="text-[1.2vw] font-bold flex items-center gap-4"><img src="../../public/iconos/icon_codigoLimpio.png" alt="" class="w-[2.3vw]"> Código limpio</h2>
+                    <p class="text-[.9vw]">Escribir código mantenible, escalable y eficiente que resista el paso del tiempo.</p>
+                </div>
+
+                <div class="flex flex-col gap-3 text-white bg-linear-to-b from-[#6523C5] to-[#30115F] w-[25vw] rounded-md px-[1rem] py-[.8rem] ">
+                    <h2 class="text-[1.2vw] font-bold flex items-center gap-3"> <img src="../../public/iconos/icon_disenoCreativo.png" alt="" class="w-[2.3vw]">Diseño creativo</h2>
+                    <p class="text-[.9vw]">Elaboración hermosa, interfaces intuitivas que proporciona una experiencia excepcional para el usuario.</p>
+                </div>
+
+                <div class="flex flex-col gap-3 text-white bg-linear-to-r from-[#6523C5] to-[#30115F] w-[25vw] rounded-md px-[1rem] py-[.8rem] ">
+                    <h2 class="text-[1.2vw] font-bold flex items-center gap-4"> <img src="../../public/iconos/icon_rendimiento.png" alt="" class="w-[2.3vw]">Rendimiento</h2>
+                    <p class="text-[.9vw]">Optimizamos cada aspecto para ofrecer aplicaciones rápidas y con muy buena capacidad de respuesta.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-5 mx-auto items-center pt-55" id="tecnologias">
+            <h1 class="font-[Preahvihear] text-[2.1rem] text-white text-center lg:w-[55rem]" >Tecnologías</h1>
+            <p class="font-[Preahvihear] text-white text-center text-[1.2rem] lg:w-[55rem]">Tecnologías con las que trabajo.</p>
+
+            <div class="flex w-[90%] lg:w-[82vw] overflow-hidden py-10">
+                <div class="flex items-center animate-scroll-x  gap-[8%]">
+                    <img src="/tecnologias/html.png" alt="HTML" class="w-[4vw]">
+                    <img src="/tecnologias/css.png" alt="CSS" class="w-[4vw]">
+                    <img src="/tecnologias/Js.png" alt="JavaScript" class="w-[4vw]">
+                    <img src="/tecnologias/figma.png" alt="Figma" class="w-[4vw]">
+                    <img src="/tecnologias/github.png" alt="Github" class="w-[4vw]">
+                    <img src="/tecnologias/xampp.png" alt="Xampp" class="w-[4vw]">
+                    <img src="/tecnologias/mongodb.svg" alt="MongoDB" class="w-[3.5vw]">  
+                    <img src="/tecnologias/astro.png" alt="Astro" class="w-[3vw] rounded-md"> 
+                    <img src="/tecnologias/tailwind.png" alt="Tailwind" class="w-[3vw] rounded-md"> 
+
+                    <img src="/tecnologias/html.png" alt="HTML" class="w-[4vw]">
+                    <img src="/tecnologias/css.png" alt="CSS" class="w-[4vw]">
+                    <img src="/tecnologias/Js.png" alt="JavaScript" class="w-[4vw]">
+                    <img src="/tecnologias/figma.png" alt="Figma" class="w-[4vw]">
+                    <img src="/tecnologias/github.png" alt="Github" class="w-[4vw]">
+                    <img src="/tecnologias/xampp.png" alt="Xampp" class="w-[4vw]">
+                    <img src="/tecnologias/mongodb.svg" alt="MongoDB" class="w-[3.5vw]"> 
+                    <img src="/tecnologias/astro.png" alt="Astro" class="w-[3vw] rounded-md"> 
+                    <img src="/tecnologias/tailwind.png" alt="Tailwind" class="w-[3vw] rounded-md"> 
+                    
+                </div>
+            </div>
+        </section>
+
+        <Proyectos />
+
+        <Contacto />
+
+
+    </main>
+</Layout>

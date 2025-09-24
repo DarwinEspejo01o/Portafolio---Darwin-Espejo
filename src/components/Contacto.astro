@@ -1,0 +1,56 @@
+---
+import Badge from '../components/Badge.astro';
+---
+
+
+<section class="flex flex-col gap-8 mx-auto items-center py-10 my-25" id="contacto">
+    <h1 class="font-[Preahvihear] text-[2.1rem] text-white text-center lg:w-[55rem]" >Contacta conmigo</h1>
+    <p class="font-[Preahvihear] text-white text-center text-[1.2rem] lg:w-[55rem]">¡Trabajemos juntos! <br> ¿Tienes un proyecto en mente? Me encantaría escuchar tus ideas y ayudarte a hacerlas realidad.</p>
+
+    <div class=" flex w-full font-[Plus_Jakarta_Sans]  justify-center gap-15 mt-10">
+        
+        <div class="bg-[#30115F] w-auto lg:w-[30rem] rounded-md py-4 px-6 border-2 border-solid border-[#6C63FF] shadow-[0_0_30px_rgba(128,90,213,0.3)] flex flex-col gap-10">
+            <h1 class="text-white text-[1.2rem] font-bold">Información de contacto</h1>
+
+            <p class="text-white flex items-center gap-5"><img src="../../public/iconos/mail.svg" alt="" class="w-8">darwinespejo2006@gmail.com</p>
+            <p class="text-white flex items-center gap-5"><img src="../../public/iconos/phone.svg" alt="" class="w-8">+1 829-274-3462</p>
+            <p class="text-white flex items-center gap-5"><img src="../../public/iconos/map.svg" alt="" class="w-8">Santiago, los ciruelitos.</p>
+
+            <div class="bg-[#270E4A] rounded-md py-4 px-5">
+                <p class="text-white text-[.8rem]"><Badge><span class="text-[.9rem]">Disponibilidad:</span></Badge> Actualmente disponible para proyectos freelance y oportunidades de colaboración. Tiempo de respuesta máxima: 24 horas.</p>
+            </div>
+        </div>
+
+        <form action="" class="bg-[#30115F] w-auto lg:w-[30rem] rounded-md py-4 px-6 border-2 border-solid border-[#6C63FF] shadow-[0_0_30px_rgba(128,90,213,0.3)] flex flex-col gap-8 text-white">
+            <h1 class="text-white text-[1.2rem] font-bold">Información de contacto</h1>
+
+            <div class="flex w-full flex-col gap-4">
+                <div class="flex justify-center gap-5">
+                    <div class="flex flex-col gap-2">
+                        <label for="nombre" class="ml-2 text-[.9rem]">Nombre</label>
+                        <input type="text" placeholder="Tú nombre" name="nombre" class="placeholder-[#3B3B3B] pl-3 text-[.8rem] bg-white rounded-md h-8 w-50 text-black" required>
+                    </div>
+    
+                    <div class="flex flex-col gap-2">
+                        <label for="correo" class=" ml-2 text-[.9rem]">Correo Electrónico</label>
+                        <input type="email" placeholder="tucorreo@gmail.com" name="correo" class="placeholder-[#3B3B3B] pl-3 text-[.8rem] bg-white rounded-md h-8 w-50 text-black" required>
+                    </div>
+                </div>
+
+                <div class="flex  flex-col gap-2">
+                    <label for="asunto" class="ml-2 text-[.9rem]">Asunto</label>
+                    <input type="text" placeholder="¿De qué quieres hablar?" name="asunto" class="placeholder-[#3B3B3B] pl-3 text-[.8rem] bg-white rounded-md h-10 w-[100%] text-black" required>
+                </div>
+
+                <div class="flex  flex-col gap-2">
+                    <label for="mensjae" class="ml-2 text-[.9rem]">Mensaje</label>
+                    <textarea name="mensaje" id="" placeholder="Cuéntame sobre tu proyecto..." class="placeholder-[#3B3B3B] pl-3 pt-1 text-[.8rem] text-black bg-white rounded-md h-13 w-[100%] resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="flex items-center justify-center gap-2 mt-2 h-11 w-[100%] bg-[#45379B] text-[.9rem] rounded-md cursor-pointer"><img src="../../public/iconos/send.svg" alt="" class="w-5"> Enviar mensaje</button>
+            </div>
+        </form>
+
+    </div>
+
+</section>

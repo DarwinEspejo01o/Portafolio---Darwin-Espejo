@@ -1,0 +1,25 @@
+/* global.css */
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fuentes */
+@import "@fontsource/preahvihear/index.css";
+@import "@fontsource/plus-jakarta-sans/400.css";
+
+ @layer utilities {
+    @keyframes scroll-x {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-122%);
+    }
+    }
+
+    .animate-scroll-x {
+    animation: scroll-x 20s linear infinite;
+    }
+}
